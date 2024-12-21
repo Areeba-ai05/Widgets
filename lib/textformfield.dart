@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class ListDetails extends StatelessWidget {
-  const ListDetails ({super.key});
+class TextDetails extends StatelessWidget {
+  const TextDetails ({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.teal,
-        title: Text('List Detail',
+        title: Text('TextFormField Detail',
           style: TextStyle(fontSize:28,fontWeight: FontWeight.bold, color:Colors.white),),
         centerTitle: true,
       ),
@@ -18,29 +18,29 @@ class ListDetails extends StatelessWidget {
           child: Column(
             children: [
               Container(
-                child: Text('ListView:Displays a scrollable list of widgets.', style:TextStyle(fontSize:18,fontWeight: FontWeight.w100, color:Colors.teal),),
+                child: Text('TextField:For user input.', style:TextStyle(fontSize:18,fontWeight: FontWeight.w100, color:Colors.teal),),
               ),
               SizedBox(height: 20,),
               Row(
                 children: [
-                  Text('Properties of ListView:',style:TextStyle(fontSize:28,fontWeight: FontWeight.bold, color:Colors.black),),
+                  Text('Properties of TextFormField:',style:TextStyle(fontSize:28,fontWeight: FontWeight.bold, color:Colors.black),),
                 ],),
               SizedBox(height: 20,),
               Row(
-                children: [Text('1.children: A list of widgets to display.',style:TextStyle(fontSize:18,fontWeight: FontWeight.w100, color:Colors.teal),),
+                children: [Text('1.controller: Manages the input text.',style:TextStyle(fontSize:18,fontWeight: FontWeight.w100, color:Colors.teal),),
                 ],
               ),
 
               SizedBox(height: 20,),
               Row(
                 children: [
-                  Text('2.scrollDirection: Specifies scrolling direction (Axis.vertical or Axis.horizontal)..',style:TextStyle(fontSize:18,fontWeight: FontWeight.w100, color:Colors.teal),),
+                  Text('2.decoration: For styling the input field..',style:TextStyle(fontSize:18,fontWeight: FontWeight.w100, color:Colors.teal),),
                 ],
               ),
               SizedBox(height: 20,),
               Row(
                 children: [
-                  Text('3.padding: Padding around the list.',style:TextStyle(fontSize:18,fontWeight: FontWeight.w100, color:Colors.teal),),
+                  Text('3.onChanged: Callback for when the input changes.',style:TextStyle(fontSize:18,fontWeight: FontWeight.w100, color:Colors.teal),),
                 ],
               ),
 

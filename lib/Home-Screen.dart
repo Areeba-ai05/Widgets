@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:widgets/columndetails.dart';
 import 'package:widgets/containerdetails.dart';
+import 'package:widgets/listview-detail.dart';
 import 'package:widgets/rowdetails.dart';
 import 'package:widgets/scaffold-details.dart';
 import 'package:widgets/Iconsdetails.dart';
@@ -116,6 +117,36 @@ class HomeScreen extends StatelessWidget {
                   child:TextButton(onPressed: (){
                     Navigator.push(context, MaterialPageRoute(builder: (context)=>StackDetails()));
                   }, child: Text('Stack Widget', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 30,color: Colors.white),),) ,
+                ),
+              ),
+              SizedBox(height: 30,),
+              Container(
+                margin:  EdgeInsets.symmetric(horizontal: 90),
+                height: 90,
+                width: 300,
+                decoration: BoxDecoration(
+                    color: Colors.teal,
+                    borderRadius: BorderRadius.circular(10)
+                ),
+                child: Center(
+                  child:TextButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>ListDetails()));
+                  }, child: Text('ListView Widget', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 30,color: Colors.white),),) ,
+                ),
+              ),
+              SizedBox(height: 30,),
+              Container(
+                margin:  EdgeInsets.symmetric(horizontal: 90),
+                height: 90,
+                width: 300,
+                decoration: BoxDecoration(
+                    color: Colors.teal,
+                    borderRadius: BorderRadius.circular(10)
+                ),
+                child: Center(
+                  child:TextButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>StackDetails()));
+                  }, child: Text('TextFormField Widget', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 30,color: Colors.white),),) ,
                 ),
               ),
 
