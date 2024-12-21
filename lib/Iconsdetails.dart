@@ -48,7 +48,8 @@ class IconDetails extends StatelessWidget {
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child:Row(
-                    children: [Text('3.color:Changes the color of the icon.Type: Color.',style:TextStyle(fontSize:18,fontWeight: FontWeight.w100, color:Colors.teal),),
+                    children: [
+                      Text('3.color:Changes the color of the icon.Type: Color.',style:TextStyle(fontSize:18,fontWeight: FontWeight.w100, color:Colors.teal),),
                     ],
                   ),
                 ),

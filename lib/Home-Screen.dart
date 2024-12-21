@@ -6,6 +6,7 @@ import 'package:widgets/rowdetails.dart';
 import 'package:widgets/scaffold-details.dart';
 import 'package:widgets/Iconsdetails.dart';
 import 'package:widgets/stack%20detail.dart';
+import 'package:widgets/textformfield.dart';
 
 
 
@@ -145,7 +146,7 @@ class HomeScreen extends StatelessWidget {
                 ),
                 child: Center(
                   child:TextButton(onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=>StackDetails()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>TextDetails()));
                   }, child: Text('TextFormField Widget', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 30,color: Colors.white),),) ,
                 ),
               ),
