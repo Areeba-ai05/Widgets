@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class IconDetails extends StatelessWidget {
-  const IconDetails ({super.key});
+class StackDetails extends StatelessWidget {
+  const StackDetails ({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.teal,
-          title: Text('Icons Detail',
+          title: Text('Stack Detail',
             style: TextStyle(fontSize:28,fontWeight: FontWeight.bold, color:Colors.white),),
           centerTitle: true,
         ),
@@ -18,7 +18,7 @@ class IconDetails extends StatelessWidget {
             child: Column(
               children: [
                 Container(
-                  child: Text('In Flutter, icons are visual symbols used to represent common actions, concepts, or statuses. They are usually displayed using the Icon widget..', style:TextStyle(fontSize:18,fontWeight: FontWeight.w100, color:Colors.teal),),
+                  child: Text('Overlaps widgets on top of each other.', style:TextStyle(fontSize:18,fontWeight: FontWeight.w100, color:Colors.teal),),
                 ),
                 SizedBox(height: 20,),
                 Row(
