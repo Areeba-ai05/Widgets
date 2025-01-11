@@ -15,6 +15,7 @@ import 'package:widgets/inkwell-detail.dart';
 import 'package:widgets/inputdecoration.dart';
 import 'package:widgets/listtile.dart';
 import 'package:widgets/listview-detail.dart';
+import 'package:widgets/materialapp.dart';
 import 'package:widgets/padding-detail.dart';
 import 'package:widgets/rowdetails.dart';
 import 'package:widgets/scaffold-details.dart';
@@ -66,14 +67,14 @@ class HomeScreen extends StatelessWidget {
               Container(
                 margin:  EdgeInsets.symmetric(horizontal: 90),
                 height: 90,
-                width: 600,
+                width: 300,
                 decoration: BoxDecoration(
                     color: Colors.teal,
                     borderRadius: BorderRadius.circular(10)
                 ),
                 child: Center(
                   child:TextButton(onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=>listileDetails()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>materialDetails()));
                   }, child: Text('MaterialApp', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 25,color: Colors.white),),) ,
                 ),
               ),
@@ -172,7 +173,7 @@ class HomeScreen extends StatelessWidget {
               Container(
                 margin:  EdgeInsets.symmetric(horizontal: 90),
                 height: 90,
-                width: 800,
+                width: 300,
                 decoration: BoxDecoration(
                     color: Colors.teal,
                     borderRadius: BorderRadius.circular(10)
@@ -187,7 +188,7 @@ class HomeScreen extends StatelessWidget {
               Container(
                 margin:  EdgeInsets.symmetric(horizontal: 90),
                 height: 90,
-                width: 600,
+                width: 300,
                 decoration: BoxDecoration(
                     color: Colors.teal,
                     borderRadius: BorderRadius.circular(10)
@@ -202,7 +203,7 @@ class HomeScreen extends StatelessWidget {
               Container(
                 margin:  EdgeInsets.symmetric(horizontal: 90),
                 height: 90,
-                width: 600,
+                width: 300,
                 decoration: BoxDecoration(
                     color: Colors.teal,
                     borderRadius: BorderRadius.circular(10)
@@ -217,7 +218,7 @@ class HomeScreen extends StatelessWidget {
               Container(
                 margin:  EdgeInsets.symmetric(horizontal: 90),
                 height: 90,
-                width: 600,
+                width: 300,
                 decoration: BoxDecoration(
                     color: Colors.teal,
                     borderRadius: BorderRadius.circular(10)
@@ -232,7 +233,7 @@ class HomeScreen extends StatelessWidget {
               Container(
                 margin:  EdgeInsets.symmetric(horizontal: 90),
                 height: 90,
-                width: 600,
+                width: 300,
                 decoration: BoxDecoration(
                     color: Colors.teal,
                     borderRadius: BorderRadius.circular(10)
@@ -247,7 +248,7 @@ class HomeScreen extends StatelessWidget {
               Container(
                 margin:  EdgeInsets.symmetric(horizontal: 90),
                 height: 90,
-                width: 600,
+                width: 300,
                 decoration: BoxDecoration(
                     color: Colors.teal,
                     borderRadius: BorderRadius.circular(10)
@@ -262,7 +263,7 @@ class HomeScreen extends StatelessWidget {
               Container(
                 margin:  EdgeInsets.symmetric(horizontal: 90),
                 height: 90,
-                width: 600,
+                width: 300,
                 decoration: BoxDecoration(
                     color: Colors.teal,
                     borderRadius: BorderRadius.circular(10)
@@ -277,7 +278,7 @@ class HomeScreen extends StatelessWidget {
               Container(
                 margin:  EdgeInsets.symmetric(horizontal: 90),
                 height: 90,
-                width: 600,
+                width: 300,
                 decoration: BoxDecoration(
                     color: Colors.teal,
                     borderRadius: BorderRadius.circular(10)
@@ -292,7 +293,7 @@ class HomeScreen extends StatelessWidget {
               Container(
                 margin:  EdgeInsets.symmetric(horizontal: 90),
                 height: 90,
-                width: 600,
+                width: 300,
                 decoration: BoxDecoration(
                     color: Colors.teal,
                     borderRadius: BorderRadius.circular(10)
@@ -307,7 +308,7 @@ class HomeScreen extends StatelessWidget {
               Container(
                 margin:  EdgeInsets.symmetric(horizontal: 90),
                 height: 90,
-                width: 600,
+                width: 300,
                 decoration: BoxDecoration(
                     color: Colors.teal,
                     borderRadius: BorderRadius.circular(10)
@@ -322,7 +323,7 @@ class HomeScreen extends StatelessWidget {
               Container(
                 margin:  EdgeInsets.symmetric(horizontal: 90),
                 height: 90,
-                width: 600,
+                width: 300,
                 decoration: BoxDecoration(
                     color: Colors.teal,
                     borderRadius: BorderRadius.circular(10)
@@ -337,7 +338,7 @@ class HomeScreen extends StatelessWidget {
               Container(
                 margin:  EdgeInsets.symmetric(horizontal: 90),
                 height: 90,
-                width: 600,
+                width: 300,
                 decoration: BoxDecoration(
                     color: Colors.teal,
                     borderRadius: BorderRadius.circular(10)
@@ -352,7 +353,7 @@ class HomeScreen extends StatelessWidget {
               Container(
                 margin:  EdgeInsets.symmetric(horizontal: 90),
                 height: 90,
-                width: 600,
+                width: 300,
                 decoration: BoxDecoration(
                     color: Colors.teal,
                     borderRadius: BorderRadius.circular(10)
@@ -367,7 +368,7 @@ class HomeScreen extends StatelessWidget {
               Container(
                 margin:  EdgeInsets.symmetric(horizontal: 90),
                 height: 90,
-                width: 600,
+                width: 300,
                 decoration: BoxDecoration(
                     color: Colors.teal,
                     borderRadius: BorderRadius.circular(10)
@@ -382,7 +383,7 @@ class HomeScreen extends StatelessWidget {
               Container(
                 margin:  EdgeInsets.symmetric(horizontal: 90),
                 height: 90,
-                width: 600,
+                width: 300,
                 decoration: BoxDecoration(
                     color: Colors.teal,
                     borderRadius: BorderRadius.circular(10)
@@ -397,7 +398,7 @@ class HomeScreen extends StatelessWidget {
               Container(
                 margin:  EdgeInsets.symmetric(horizontal: 90),
                 height: 90,
-                width: 600,
+                width: 300,
                 decoration: BoxDecoration(
                     color: Colors.teal,
                     borderRadius: BorderRadius.circular(10)
@@ -412,7 +413,7 @@ class HomeScreen extends StatelessWidget {
               Container(
                 margin:  EdgeInsets.symmetric(horizontal: 90),
                 height: 90,
-                width: 600,
+                width: 300,
                 decoration: BoxDecoration(
                     color: Colors.teal,
                     borderRadius: BorderRadius.circular(10)
@@ -427,7 +428,7 @@ class HomeScreen extends StatelessWidget {
               Container(
                 margin:  EdgeInsets.symmetric(horizontal: 90),
                 height: 90,
-                width: 600,
+                width: 300,
                 decoration: BoxDecoration(
                     color: Colors.teal,
                     borderRadius: BorderRadius.circular(10)
@@ -442,7 +443,7 @@ class HomeScreen extends StatelessWidget {
               Container(
                 margin:  EdgeInsets.symmetric(horizontal: 90),
                 height: 90,
-                width: 600,
+                width: 300,
                 decoration: BoxDecoration(
                     color: Colors.teal,
                     borderRadius: BorderRadius.circular(10)
@@ -457,7 +458,7 @@ class HomeScreen extends StatelessWidget {
               Container(
                 margin:  EdgeInsets.symmetric(horizontal: 90),
                 height: 90,
-                width: 600,
+                width: 300,
                 decoration: BoxDecoration(
                     color: Colors.teal,
                     borderRadius: BorderRadius.circular(10)
