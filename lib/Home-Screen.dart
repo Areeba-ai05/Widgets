@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:widgets/appbardetail.dart';
 import 'package:widgets/boxdecoration-detail.dart';
 import 'package:widgets/buttonwidget-detail.dart';
+import 'package:widgets/ciecleavatar.dart';
 import 'package:widgets/columndetails.dart';
 import 'package:widgets/containerdetails.dart';
+import 'package:widgets/edgeinset.dart';
 import 'package:widgets/expanded.dart';
 import 'package:widgets/getmaterial.dart';
 import 'package:widgets/imagewidget.dart';
@@ -371,6 +373,36 @@ class HomeScreen extends StatelessWidget {
                   child:TextButton(onPressed: (){
                     Navigator.push(context, MaterialPageRoute(builder: (context)=>getDetails()));
                   }, child: Text(' GetMaterialApp (from GetX)', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 25,color: Colors.white),),) ,
+                ),
+              ),
+              SizedBox(height: 30,),
+              Container(
+                margin:  EdgeInsets.symmetric(horizontal: 90),
+                height: 90,
+                width: 600,
+                decoration: BoxDecoration(
+                    color: Colors.teal,
+                    borderRadius: BorderRadius.circular(10)
+                ),
+                child: Center(
+                  child:TextButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>edgDetails()));
+                  }, child: Text('EdgeInsets', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 25,color: Colors.white),),) ,
+                ),
+              ),
+              SizedBox(height: 30,),
+              Container(
+                margin:  EdgeInsets.symmetric(horizontal: 90),
+                height: 90,
+                width: 600,
+                decoration: BoxDecoration(
+                    color: Colors.teal,
+                    borderRadius: BorderRadius.circular(10)
+                ),
+                child: Center(
+                  child:TextButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>caDetails()));
+                  }, child: Text('CircleAvatar', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 25,color: Colors.white),),) ,
                 ),
               ),
 
