@@ -6,6 +6,7 @@ import 'package:widgets/padding-detail.dart';
 import 'package:widgets/rowdetails.dart';
 import 'package:widgets/scaffold-details.dart';
 import 'package:widgets/Iconsdetails.dart';
+import 'package:widgets/singlechildscrollview.dart';
 import 'package:widgets/stack%20detail.dart';
 import 'package:widgets/textformfield.dart';
 
@@ -59,7 +60,7 @@ class HomeScreen extends StatelessWidget {
                   }, child: Text('Container ', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 25,color: Colors.white),),) ,
                 ),
               ),
-           
+
               SizedBox(height: 30,),
               Container(
                 margin:  EdgeInsets.symmetric(horizontal: 90),
@@ -176,8 +177,23 @@ class HomeScreen extends StatelessWidget {
                 ),
                 child: Center(
                   child:TextButton(onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=>paddingDetails()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>SCVDetails()));
                   }, child: Text('SingleChildScrollView', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 25,color: Colors.white),),) ,
+                ),
+              ),
+              SizedBox(height: 30,),
+              Container(
+                margin:  EdgeInsets.symmetric(horizontal: 90),
+                height: 90,
+                width: 600,
+                decoration: BoxDecoration(
+                    color: Colors.teal,
+                    borderRadius: BorderRadius.circular(10)
+                ),
+                child: Center(
+                  child:TextButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>SCVDetails()));
+                  }, child: Text(' SizedBox', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 25,color: Colors.white),),) ,
                 ),
               ),
 

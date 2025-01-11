@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class SCVDetails extends StatelessWidget {
-  const SCVDetails ({super.key});
+class SBDetails extends StatelessWidget {
+  const SBDetails ({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.teal,
-          title: Text('SingleChildScrollView Detail',
+          title: Text('SizedBox Detail',
             style: TextStyle(fontSize:28,fontWeight: FontWeight.bold, color:Colors.white),),
           centerTitle: true,
         ),
@@ -18,7 +18,7 @@ class SCVDetails extends StatelessWidget {
             child: Column(
               children: [
                 Container(
-                  child: Text('Allows scrolling of a single child.', style:TextStyle(fontSize:18,fontWeight: FontWeight.w100, color:Colors.teal),),
+                  child: Text('Box with specific width and height', style:TextStyle(fontSize:18,fontWeight: FontWeight.w100, color:Colors.teal),),
                 ),
                 SizedBox(height: 20,),
                 Row(
@@ -30,7 +30,7 @@ class SCVDetails extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                   child:Row(
                     children: [
-                      Text("1.child: The child widget..",style:TextStyle(fontSize:18,fontWeight: FontWeight.w100, color:Colors.teal),
+                      Text("1.width: Width of the box.",style:TextStyle(fontSize:18,fontWeight: FontWeight.w100, color:Colors.teal),
                       ),
                     ],
                   ),
@@ -40,14 +40,14 @@ class SCVDetails extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                   child:Row(
                     children: [
-                      Text('2.scrollDirection: Horizontal/vertical scrolling.',style:TextStyle(fontSize:18,fontWeight: FontWeight.w100, color:Colors.teal),),
+                      Text('2.width: Width of the box.',style:TextStyle(fontSize:18,fontWeight: FontWeight.w100, color:Colors.teal),),
                     ],
                   ),
                 ),
                 SizedBox(height: 20,),
                 Row(
                   children: [
-                    Text('3.reverse: Reverse scroll direction.',style:TextStyle(fontSize:18,fontWeight: FontWeight.w100, color:Colors.teal),),
+                    Text('3.child: Child widget..',style:TextStyle(fontSize:18,fontWeight: FontWeight.w100, color:Colors.teal),),
                   ],
                 ),
 
