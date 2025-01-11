@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:widgets/columndetails.dart';
 import 'package:widgets/containerdetails.dart';
 import 'package:widgets/listview-detail.dart';
+import 'package:widgets/padding-detail.dart';
 import 'package:widgets/rowdetails.dart';
 import 'package:widgets/scaffold-details.dart';
 import 'package:widgets/Iconsdetails.dart';
@@ -40,7 +41,7 @@ class HomeScreen extends StatelessWidget {
                 child: Center(
                   child:TextButton(onPressed: (){
                     Navigator.push(context, MaterialPageRoute(builder: (context)=>ScaffoldDetail()));
-                  }, child: Text('Scaffold', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 30,color: Colors.white),),) ,
+                  }, child: Text('Scaffold', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 25,color: Colors.white),),) ,
                 ),
               ),
               SizedBox(height: 30,),
@@ -55,10 +56,10 @@ class HomeScreen extends StatelessWidget {
                 child: Center(
                   child:TextButton(onPressed: (){
                     Navigator.push(context, MaterialPageRoute(builder: (context)=>ContainerDetails()));
-                  }, child: Text('Container ', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 30,color: Colors.white),),) ,
+                  }, child: Text('Container ', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 25,color: Colors.white),),) ,
                 ),
               ),
-
+           
               SizedBox(height: 30,),
               Container(
                 margin:  EdgeInsets.symmetric(horizontal: 90),
@@ -71,10 +72,9 @@ class HomeScreen extends StatelessWidget {
                 child: Center(
                   child:TextButton(onPressed: (){
                     Navigator.push(context, MaterialPageRoute(builder: (context)=>RowDetails()));
-                  }, child: Text('Row Widget', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 30,color: Colors.white),),) ,
+                  }, child: Text('Row Widget', style: TextStyle(fontWeight: FontWeight.w500,fontSize:25,color: Colors.white),),) ,
                 ),
               ),
-
               SizedBox(height: 30,),
               Container(
                 margin:  EdgeInsets.symmetric(horizontal: 90),
@@ -87,7 +87,7 @@ class HomeScreen extends StatelessWidget {
                 child: Center(
                   child:TextButton(onPressed: (){
                     Navigator.push(context, MaterialPageRoute(builder: (context)=>ColumnDetails()));
-                  }, child: Text('Column Widget', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 30,color: Colors.white),),) ,
+                  }, child: Text('Column Widget', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 25,color: Colors.white),),) ,
                 ),
               ),
               SizedBox(height: 30,),
@@ -102,7 +102,7 @@ class HomeScreen extends StatelessWidget {
                 child: Center(
                   child:TextButton(onPressed: (){
                     Navigator.push(context, MaterialPageRoute(builder: (context)=>IconDetails()));
-                  }, child: Text('Icon Widget', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 30,color: Colors.white),),) ,
+                  }, child: Text('Icon Widget', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 25,color: Colors.white),),) ,
                 ),
               ),
               SizedBox(height: 30,),
@@ -117,7 +117,7 @@ class HomeScreen extends StatelessWidget {
                 child: Center(
                   child:TextButton(onPressed: (){
                     Navigator.push(context, MaterialPageRoute(builder: (context)=>StackDetails()));
-                  }, child: Text('Stack Widget', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 30,color: Colors.white),),) ,
+                  }, child: Text('Stack Widget', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 25,color: Colors.white),),) ,
                 ),
               ),
               SizedBox(height: 30,),
@@ -132,14 +132,14 @@ class HomeScreen extends StatelessWidget {
                 child: Center(
                   child:TextButton(onPressed: (){
                     Navigator.push(context, MaterialPageRoute(builder: (context)=>ListDetails()));
-                  }, child: Text('ListView Widget', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 30,color: Colors.white),),) ,
+                  }, child: Text('ListView Widget', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 25,color: Colors.white),),) ,
                 ),
               ),
               SizedBox(height: 30,),
               Container(
                 margin:  EdgeInsets.symmetric(horizontal: 90),
                 height: 90,
-                width: 300,
+                width: 800,
                 decoration: BoxDecoration(
                     color: Colors.teal,
                     borderRadius: BorderRadius.circular(10)
@@ -147,9 +147,40 @@ class HomeScreen extends StatelessWidget {
                 child: Center(
                   child:TextButton(onPressed: (){
                     Navigator.push(context, MaterialPageRoute(builder: (context)=>TextDetails()));
-                  }, child: Text('TextFormField Widget', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 30,color: Colors.white),),) ,
+                  }, child: Text('Text-Form-Field-Widget', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 25,color: Colors.white),),) ,
                 ),
               ),
+              SizedBox(height: 30,),
+              Container(
+                margin:  EdgeInsets.symmetric(horizontal: 90),
+                height: 90,
+                width: 600,
+                decoration: BoxDecoration(
+                    color: Colors.teal,
+                    borderRadius: BorderRadius.circular(10)
+                ),
+                child: Center(
+                  child:TextButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>paddingDetails()));
+                  }, child: Text('Padding', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 25,color: Colors.white),),) ,
+                ),
+              ),
+              SizedBox(height: 30,),
+              Container(
+                margin:  EdgeInsets.symmetric(horizontal: 90),
+                height: 90,
+                width: 600,
+                decoration: BoxDecoration(
+                    color: Colors.teal,
+                    borderRadius: BorderRadius.circular(10)
+                ),
+                child: Center(
+                  child:TextButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>paddingDetails()));
+                  }, child: Text('SingleChildScrollView', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 25,color: Colors.white),),) ,
+                ),
+              ),
+
 
             ],
           ),
