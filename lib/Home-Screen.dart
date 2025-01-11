@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:widgets/BTN.dart';
 import 'package:widgets/appbardetail.dart';
 import 'package:widgets/boxdecoration-detail.dart';
 import 'package:widgets/buttonwidget-detail.dart';
 import 'package:widgets/ciecleavatar.dart';
 import 'package:widgets/columndetails.dart';
 import 'package:widgets/containerdetails.dart';
+import 'package:widgets/divider.dart';
 import 'package:widgets/edgeinset.dart';
 import 'package:widgets/expanded.dart';
 import 'package:widgets/getmaterial.dart';
 import 'package:widgets/imagewidget.dart';
 import 'package:widgets/inkwell-detail.dart';
 import 'package:widgets/inputdecoration.dart';
+import 'package:widgets/listtile.dart';
 import 'package:widgets/listview-detail.dart';
 import 'package:widgets/padding-detail.dart';
 import 'package:widgets/rowdetails.dart';
@@ -35,7 +38,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: Colors.teal,
+          backgroundColor: Colors.blueGrey,
           title: Text('Areeba Iqbal, Roll no:09',
             style: TextStyle(fontSize:28,fontWeight: FontWeight.bold, color:Colors.white),),
         centerTitle: true,
@@ -57,6 +60,21 @@ class HomeScreen extends StatelessWidget {
                   child:TextButton(onPressed: (){
                     Navigator.push(context, MaterialPageRoute(builder: (context)=>ScaffoldDetail()));
                   }, child: Text('Scaffold', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 25,color: Colors.white),),) ,
+                ),
+              ),
+              SizedBox(height: 30,),
+              Container(
+                margin:  EdgeInsets.symmetric(horizontal: 90),
+                height: 90,
+                width: 600,
+                decoration: BoxDecoration(
+                    color: Colors.teal,
+                    borderRadius: BorderRadius.circular(10)
+                ),
+                child: Center(
+                  child:TextButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>listileDetails()));
+                  }, child: Text('MaterialApp', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 25,color: Colors.white),),) ,
                 ),
               ),
               SizedBox(height: 30,),
@@ -405,7 +423,51 @@ class HomeScreen extends StatelessWidget {
                   }, child: Text('CircleAvatar', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 25,color: Colors.white),),) ,
                 ),
               ),
-
+              SizedBox(height: 30,),
+              Container(
+                margin:  EdgeInsets.symmetric(horizontal: 90),
+                height: 90,
+                width: 600,
+                decoration: BoxDecoration(
+                    color: Colors.teal,
+                    borderRadius: BorderRadius.circular(10)
+                ),
+                child: Center(
+                  child:TextButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>divDetails()));
+                  }, child: Text('Divider', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 25,color: Colors.white),),) ,
+                ),
+              ),
+              SizedBox(height: 30,),
+              Container(
+                margin:  EdgeInsets.symmetric(horizontal: 90),
+                height: 90,
+                width: 600,
+                decoration: BoxDecoration(
+                    color: Colors.teal,
+                    borderRadius: BorderRadius.circular(10)
+                ),
+                child: Center(
+                  child:TextButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>btnDetails()));
+                  }, child: Text('BottomNavigationBar', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 25,color: Colors.white),),) ,
+                ),
+              ),
+              SizedBox(height: 30,),
+              Container(
+                margin:  EdgeInsets.symmetric(horizontal: 90),
+                height: 90,
+                width: 600,
+                decoration: BoxDecoration(
+                    color: Colors.teal,
+                    borderRadius: BorderRadius.circular(10)
+                ),
+                child: Center(
+                  child:TextButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>listileDetails()));
+                  }, child: Text(' ListTile', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 25,color: Colors.white),),) ,
+                ),
+              ),
 
 
             ],
