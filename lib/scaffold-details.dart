@@ -55,6 +55,15 @@ class ScaffoldDetail extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20,),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child:Row(
+                  children: [
+                    Text('4.drawer: A sliding panel on the left.',style:TextStyle(fontSize:18,fontWeight: FontWeight.w100, color:Colors.teal),),
+                  ],
+                ),
+              ),
+              SizedBox(height: 20,),
               Row(
                 children: [
                   Text('Conclusion:',style:TextStyle(fontSize:30,fontWeight: FontWeight.bold, color:Colors.black),),
