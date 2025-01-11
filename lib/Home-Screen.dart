@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:widgets/appbardetail.dart';
+import 'package:widgets/boxdecoration-detail.dart';
+import 'package:widgets/buttonwidget-detail.dart';
 import 'package:widgets/columndetails.dart';
 import 'package:widgets/containerdetails.dart';
 import 'package:widgets/inkwell-detail.dart';
@@ -12,6 +14,7 @@ import 'package:widgets/singlechildscrollview.dart';
 import 'package:widgets/sizedbox.dart';
 import 'package:widgets/stack%20detail.dart';
 import 'package:widgets/textformfield.dart';
+import 'package:widgets/textstyle-detail.dart';
 
 
 
@@ -240,8 +243,53 @@ class HomeScreen extends StatelessWidget {
                 ),
                 child: Center(
                   child:TextButton(onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=>inkwellDetails()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>buttonwidgetDetails()));
                   }, child: Text('ButtonWidget', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 25,color: Colors.white),),) ,
+                ),
+              ),
+              SizedBox(height: 30,),
+              Container(
+                margin:  EdgeInsets.symmetric(horizontal: 90),
+                height: 90,
+                width: 600,
+                decoration: BoxDecoration(
+                    color: Colors.teal,
+                    borderRadius: BorderRadius.circular(10)
+                ),
+                child: Center(
+                  child:TextButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>boxdecorationDetails()));
+                  }, child: Text('BoxDecoration', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 25,color: Colors.white),),) ,
+                ),
+              ),
+              SizedBox(height: 30,),
+              Container(
+                margin:  EdgeInsets.symmetric(horizontal: 90),
+                height: 90,
+                width: 600,
+                decoration: BoxDecoration(
+                    color: Colors.teal,
+                    borderRadius: BorderRadius.circular(10)
+                ),
+                child: Center(
+                  child:TextButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>TsDetails()));
+                  }, child: Text('TextStyle', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 25,color: Colors.white),),) ,
+                ),
+              ),
+              SizedBox(height: 30,),
+              Container(
+                margin:  EdgeInsets.symmetric(horizontal: 90),
+                height: 90,
+                width: 600,
+                decoration: BoxDecoration(
+                    color: Colors.teal,
+                    borderRadius: BorderRadius.circular(10)
+                ),
+                child: Center(
+                  child:TextButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>TsDetails()));
+                  }, child: Text('TextStyle', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 25,color: Colors.white),),) ,
                 ),
               ),
 
